@@ -33,8 +33,8 @@ function guessProcess(inputGuessNo) {
 }
 
 function checkHightScore() {
-  const newScore = highscore <= scoreNumber;
-  if (newScore) highscoreElm.textContent = scoreNumber;
+  highscore = scoreNumber > highscore ? scoreNumber : highscore;
+  highscoreElm.textContent = highscore;
 }
 
 function endGame(win) {
