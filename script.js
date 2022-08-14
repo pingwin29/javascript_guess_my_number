@@ -69,6 +69,7 @@ function restartGameHandler() {
   showMessage('Start guessing...');
 
   guessNumberELm.value = '';
+  numberElm.textContent = '?';
 }
 
 //main
